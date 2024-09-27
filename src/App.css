@@ -1,38 +1,185 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,600;1,14..32,600&display=swap');
+button[type="submit"]{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #002F8A;
+  padding: 10px;
+  color: #fff;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width:800px){
+  div.popwrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  button[type="submit"]{
+    display: flex;
+    align-items: center;
+    background-color: #002F8A;
+    padding: 10px;
+    color: #fff;
+  }
+  form{
+    background-color: #fff;
+    width: 80%;
+    padding: 10px;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 0 auto;
+  }
+  form div{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    /* gap: 0.5em; */
+  }
+  div.futurewrapper{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    padding: 30px;
+    width: 60%;
+    border-radius: 10px;
+    text-align: center;
+  }
+  div.navfuture{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    margin: 0 auto;
+    /* background-color: blanchedalmond; */
+  }
+  div.navfuture button{
+    border: 3px solid #F9F5FF;
+    border-radius: 5px;
+    padding: 10px 20px;
+  }
+  div.navfuture button:first-child{
+    color: #002F8A;
+    background-color: #F9F5FF;
+  }
+  div.navfuture button:last-child{
+    color: #fff;
+    background-color: #002F8A;
+  }
+  div.futurewrapper p{
+    /* font-size: 14px; */
+    text-align: left;
+    line-height: 22px;
+  }
+  div.futurewrapper h3{
+    text-align: center;
+    line-height: 18.28px;
+    padding: 10px 0;
+    font-weight: 600;
+    font-family: 'inter';
+  }
+}
+@media (max-width:600px){
+  div.futurewrapper p{
+    /* font-size: 14px; */
+    line-height: 22px;
+  }
+  div.futurewrapper{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    padding: 30px;
+    width: 80%;
+
+    border-radius: 10px;
+
+  }
+  div.futurewrapper h3{
+    text-align: center;
+    line-height: 18.28px;
+    font-weight: 600;
+    padding: 10px 0;
+    font-family: 'inter';
+  }
+}
+@media (max-width:500px){
+  div.futurewrapper p{
+    /* font-size: 14px; */
+    line-height: 22px;
+  }
+  div.futurewrapper{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    padding: 30px;
+    width: 90%;
+    border-radius: 10px;
+
+  }
+  div.futurewrapper h3{
+    text-align: center;
+    line-height: 18.28px;
+    font-weight: 600;
+    padding: 10px 0;
+    font-family: 'inter';
+  }
+  div.navfuture{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: 0 auto;
+    /* background-color: blanchedalmond; */
+  }
+}
+@media (max-width:400px){
+  div.futurewrapper p{
+    /* font-size: 14px; */
+    line-height: 22px;
+  }
+  div.futurewrapper{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    padding: 30px;
+    width: 95%;
+    border-radius: 10px;
+
+  }
+  div.futurewrapper h3{
+    text-align: center;
+    line-height: 18.28px;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 10px 0;
+    font-family: 'inter';
+  }
+}
+@media (max-width:300px){
+  div.futurewrapper{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+
+  }
+  div.futurewrapper p{
+    /* font-size: 14px; */
+    line-height: 22px;
+  }
+  div.futurewrapper h3{
+    text-align: center;
+    line-height: 18.28px;
+    padding: 10px 0;
+    font-size: 0.8em;
+    font-weight: 600;
+    font-family: 'inter';
+  }
+  div.navfuture{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+    /* background-color: blanchedalmond; */
   }
 }

@@ -6,7 +6,7 @@ import Future from './Future';
 function App() {
   return (
 <Routes>
-  <Route path='/future' element={<Future />}/>
+  <Route path='/' element={<Future />}/>
 </Routes>
   );
 }

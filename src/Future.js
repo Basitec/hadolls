@@ -10,10 +10,11 @@ function Future() {
   let navigate = useNavigate()
   const formik = useFormik({
     initialValues: {
-      selectField: '',
-      selectFiled2: ''
+      selectField: 'Adeolu Mubaaraq',
+      selectFiled2: '₦5,000'
     },
-    onSubmit: (values) => {
+    onSubmit: (action,values) => {
+      // action.stopPropagation()
       console.log(values.selectField);
       console.log(values.selectFiled2);
       
@@ -23,10 +24,16 @@ function Future() {
   let change = ()=>{
     setShow(!show)
   }
-  let closed = ()=>{
+  let closed = (e)=>{
+    // if (e.target.classList.contains('popwrapper') && e.target.tagName !== 'select') {
+    //   setShow(false);
+    // }
     setShow(false)
-    navigate('/future')
+    // navigate('/future')
   }
+  // let dontgo =(e)=>{
+  //   e.stopPropagation()
+  // }
   return (
     <div className='futurewrapper'>
  <h3>Halal Dollars FutureWealth</h3>
@@ -41,16 +48,23 @@ FutureWealth is designed to secure the future of our children, ensure the well-b
         <button>Learn More</button>
         <button onClick={change}>Join Now</button>
     </div>
+    {/* <select name="" id="">
+      <option value="ddd">kkk</option>
+      <option value="ddd">sss</option>
+      <option value="ddd">kk</option>
+      <option value="ddd">kaakk</option>
+    </select> */}
 {
-  show?<div className='popwrapper' onClick={closed}>
-    {/* <div className='popInner'> */}
+  show?<div className='popwrapper' >
+    <button onClick={closed}>X</button>
+    {/* <div className='popInner' onClick={dontgo}> */}
     <form onSubmit={formik.handleSubmit}>
     <div className='person'>
       <label>Who do you want to pay for?</label>
       <select name="selectField"
         value={formik.values.selectField}
-        onChange={formik.handleChange}>
-          <option selected disabled>--select a person--</option>
+        onChange={formik.handleChange} >
+          {/* <option selected disabled>--select a person--</option> */}
         <option value="Adeolu Mubaaraq">Myself - Adeolu Mubaaraq</option>
         <option value="kola Adenuga">Kola Adenuga</option>
         <option value="Femi omotayo">Femi omotayo</option>
@@ -68,11 +82,11 @@ FutureWealth is designed to secure the future of our children, ensure the well-b
     <div className='proceed'>
       {/* <img src={plane} alt=''/> */}
       
-    <button type='submit'><img src={paln} alt=''/><span> Proceed to Payment</span></button>
+    <button type='submit'>Proceed to Payment</button>
     </div>
     </form>
-    {/* </div> */}
-  </div>
+    </div>
+  // </div>
   
   
   

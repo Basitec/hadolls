@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,600;1,14..32,600&display=swap');
 button[type="submit"]{
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   background-color: #002F8A;
   padding: 10px;
   color: #fff;
@@ -15,8 +15,12 @@ button[type="submit"]{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     display: flex;
+    backdrop-filter: blur(5px);
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 0.5em;
+    /* text-align: left; */
   }
   button[type="submit"]{
     display: flex;
@@ -24,22 +28,45 @@ button[type="submit"]{
     background-color: #002F8A;
     padding: 10px;
     color: #fff;
+    border-radius: 5px;
+    border: 0;
+    text-align: center;
+    /* width: 80%; */
   }
   form{
     background-color: #fff;
     width: 80%;
-    padding: 10px;
-    height: 30%;
+    padding: 20px;
+    /* height: 40%; */
     display: flex;
     flex-direction: column;
     gap: 1em;
+    border-radius: 5px;
     margin: 0 auto;
+  }
+  div.popwrapper>button{
+    /* padding: 10px; */
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    border: 0;
+    font-size: 1.5em;
+    background-color: #002F8A;
+    color: #fff;
+    text-align: center;
+  }
+  div.popInner{
+    width: 80%;
+  }
+  form div select{
+    padding: 10px;
+    outline: none;
   }
   form div{
     display: flex;
     flex-direction: column;
     text-align: left;
-    /* gap: 0.5em; */
+    gap: 0.5em;
   }
   div.futurewrapper{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -72,6 +99,7 @@ button[type="submit"]{
   div.futurewrapper p{
     /* font-size: 14px; */
     text-align: left;
+    padding: 20px 0;
     line-height: 22px;
   }
   div.futurewrapper h3{

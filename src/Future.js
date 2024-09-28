@@ -15,6 +15,7 @@ function Future() {
     },
     onSubmit: (action,values) => {
       // action.stopPropagation()
+      navigate('/payment')
       console.log(values.selectField);
       console.log(values.selectFiled2);
       
@@ -31,9 +32,9 @@ function Future() {
     setShow(false)
     // navigate('/future')
   }
-  // let dontgo =(e)=>{
-  //   e.stopPropagation()
-  // }
+  let dontgo =(e)=>{
+    e.stopPropagation()
+  }
   return (
     <div className='futurewrapper'>
  <h3>Halal Dollars FutureWealth</h3>
@@ -55,9 +56,9 @@ FutureWealth is designed to secure the future of our children, ensure the well-b
       <option value="ddd">kaakk</option>
     </select> */}
 {
-  show?<div className='popwrapper' >
-    <button onClick={closed}>X</button>
-    {/* <div className='popInner' onClick={dontgo}> */}
+  show?<div className='popwrapper' onClick={closed}>
+    {/* <button onClick={closed}>X</button> */}
+    <div className='popInner' onClick={dontgo}>
     <form onSubmit={formik.handleSubmit}>
     <div className='person'>
       <label>Who do you want to pay for?</label>
@@ -86,7 +87,7 @@ FutureWealth is designed to secure the future of our children, ensure the well-b
     </div>
     </form>
     </div>
-  // </div>
+   </div>
   
   
   

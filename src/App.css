@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,600;1,14..32,600&display=swap');
 button[type="submit"]{
-  display: flex;
-  /* align-items: center; */
+  display: flex; 
   background-color: #002F8A;
   padding: 10px;
   color: #fff;
@@ -60,7 +59,7 @@ button[type="submit"]{
   button[type="submit"]>img{
     padding: 0 5px;
   }
-  button[type="submit"], div.accumulated button,div.Subsidiaries button{
+  button[type="submit"], div.accumulated button,div.Subsidiaries button, tr td:nth-child(4){
     display: flex;
     align-items: center;
     background-color: #002F8A;
@@ -117,13 +116,22 @@ button[type="submit"]{
   }
   div.Subsidiaries div h3,div.Subsidiaries div p{
     color: #98A2B3;
-    /* font-size: 15px; */
   }
   tr td{
     text-align: center;
-    padding: 5px;
+    padding: 5px ;
     font-size: 8px;
     color: #475467;
+  }
+  tr td:nth-child(4) img{
+    padding: 0 5px;
+  }
+  tr td:nth-child(4){
+    background-color: #ECFDF3;
+    color: #027A48;
+    border-radius: 20px;
+    padding: 5px 5px;
+    width: 90%;
   }
   table{
     padding: 20px 0;
@@ -376,16 +384,21 @@ button[type="submit"]{
     width: 100%;
   }
   div.Subsidiaries div h3{
-    font-size: 0.7em;
+    font-size: 0.6em;
   }
   div.accumulated button{
+    font-size: 0.7em;
     width: 52%;
   }
   div.Subsidiaries button{
+    font-size: 0.7em;
     width: 90%;
   }
+  div.accumulated button img{
+    padding: 0 4px;
+  }
   div.accumulated h2{
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
   div.futurewrapper p{
     /* font-size: 14px; */

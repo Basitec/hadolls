@@ -3,18 +3,18 @@
         "Date": "12/02/24",
         "Description": "Jan Investment",
         "Amount" : "₦5,000",
-        "Status" :"success"
+        "Status" :"Success"
     },
     {
         "Date": "12/02/24",
         "Description": "Feb Investment",
         "Amount" : "₦5,000",
-        "Status" :"success"
+        "Status" :"Success"
     },
     {
         "Date": "12/02/24",
         "Description": "Mar Investment",
         "Amount" : "₦5,000",
-        "Status" :"success"
+        "Status" :"Success"
     }
 ]

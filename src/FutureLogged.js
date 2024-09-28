@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import plane from './icons/paper-plane-solid.svg'
 import './App.css'
 import user from './icons/user-plus-solid.svg'
+import dot from './icons/circle-solid.svg'
 
 function FutureLogged() {
     let [show, setShow] = useState(false)
@@ -100,7 +101,7 @@ function FutureLogged() {
                 <Link> See Details</Link>
             </div>
 {/* <hr /> */}
-                <table>
+                <table cellSpacing="10px">
                     <thead>
                         <th>Date</th>
                         <th>Description</th>
@@ -114,7 +115,7 @@ function FutureLogged() {
                                 <td>{item.Date}</td>
                                 <td>{item.Description}</td>
                                 <td>{item.Amount}</td>
-                                <td>{item.Status}</td>
+                                <td><img src={dot} alt="" /> {item.Status}</td>
                                 </tr>
                             ))
                         }

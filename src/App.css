@@ -79,6 +79,41 @@ button[type="submit"]{
     border: 0;
     border-radius: 2px;
   }
+  div.FullHistory>form{
+    /* background-color: #027A48; */
+  background-color: #FCFAFF;
+    padding: 30px 10px;
+    width: 100%;
+  }
+  div.FullHistory>form button{
+    padding: 10px 20px;
+    border: 2px solid #F4EBFF;
+    /* background-color: #1D2939; */
+  }
+  div.FullHistory>form div:nth-child(2) select{
+    padding: 5px;
+  }
+  div.FullHistory>form div:nth-child(2){
+    display: grid;
+    width: 100%;
+    padding: 10px;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    /* color: #002F8A; */
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  div.FullHistory>form div:nth-child(1){
+    width: 95%;
+  }
+  div.FullHistory>form div:nth-child(1) input{
+    padding: 10px;
+  }
+  div.FullHistory>form div:nth-child(1) img{
+    position: relative;
+    top: -2.5em;
+    right: -8em;
+  }
   div.Subsidiaries{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -134,12 +169,16 @@ button[type="submit"]{
     width: 90%;
   }
   table{
+    border-top: 1px solid #E4E7EC;
     padding: 20px 0;
     width: 100%;
   }
   thead{
     font-size: 10px;
     color: #1D2939;
+  }
+  div.FullHistory>div.Payment table{
+    width: 100%;
   }
   form{
     background-color: #fff;
@@ -161,9 +200,23 @@ button[type="submit"]{
     /* border: 1px solid #0000005f; */
     margin: 0 auto;
   }
+  div.FullHistory{
+    font-family: 'Inter';
+  }
   div.Payment div h1,div.Payment div a{
-    
+    text-decoration: none;  
     font-size: 9.14px;
+  }
+  div.Payment div a img{
+    padding: 0 5px;
+  }
+  div.Payment div a{
+    display: flex;
+    align-items: center;
+    color: #4F46E5;
+  }
+  div.FullHistory>div.Payment table{
+    border-top: 1px solid #E4E7EC;
   }
   /* div.popwrapper>button{
     padding: 10px;
@@ -400,6 +453,7 @@ button[type="submit"]{
   div.accumulated h2{
     font-size: 0.8em;
   }
+
   div.futurewrapper p{
     /* font-size: 14px; */
     line-height: 22px;
@@ -415,6 +469,10 @@ button[type="submit"]{
   button[type="submit"]{
     width: 100%;
   }
+ 
+  /* div.FullHistory>div.Payment table tr td{
+    font-size: 0.4em;
+  } */
   div.navfuture{
     display: flex;
     width: 100%;

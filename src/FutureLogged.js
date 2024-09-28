@@ -8,6 +8,7 @@ import plane from './icons/paper-plane-solid.svg'
 import './App.css'
 import user from './icons/user-plus-solid.svg'
 import dot from './icons/circle-solid.svg'
+import angleright from './icons/angle-right-solid.svg'
 
 function FutureLogged() {
     let [show, setShow] = useState(false)
@@ -23,12 +24,12 @@ function FutureLogged() {
       navigate('/payment')
       console.log(values.selectField);
       console.log(values.selectFiled2);
-      
        // access the select field's value here
     },
   });
   const formik2 = useFormik({
     initialValues: {
+      name:'',
         selectFielduno:'',
         selectFieldtres: '',
       selectFielddos: ''
@@ -98,7 +99,7 @@ function FutureLogged() {
         <div className="Payment">
             <div>
                 <h1>Payment History </h1>
-                <Link> See Details</Link>
+                <Link to='/history'>  See Details <img src={angleright} alt="" /></Link>
             </div>
 {/* <hr /> */}
                 <table cellSpacing="10px">

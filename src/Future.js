@@ -10,11 +10,10 @@ function Future() {
   let navigate = useNavigate()
   const formik = useFormik({
     initialValues: {
-      selectField: 'Adeolu Mubaaraq',
-      selectFiled2: '₦5,000'
+      selectField: '',
+      selectFiled2: ''
     },
     onSubmit: (action,values) => {
-      // action.stopPropagation()
       navigate('/payment')
       console.log(values.selectField);
       console.log(values.selectFiled2);
@@ -26,11 +25,7 @@ function Future() {
     setShow(!show)
   }
   let closed = (e)=>{
-    // if (e.target.classList.contains('popwrapper') && e.target.tagName !== 'select') {
-    //   setShow(false);
-    // }
     setShow(false)
-    // navigate('/future')
   }
   let dontgo =(e)=>{
     e.stopPropagation()
@@ -83,7 +78,7 @@ FutureWealth is designed to secure the future of our children, ensure the well-b
     <div className='proceed'>
       {/* <img src={plane} alt=''/> */}
       
-    <button type='submit'>Proceed to Payment</button>
+    <button type='submit'>  <img src={plane} alt=''/>Proceed to Payment</button>
     </div>
     </form>
     </div>

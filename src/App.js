@@ -11,7 +11,7 @@ function App() {
   {/* <Route path='/' element={<Future />}/> */}
   <Route path='/' element={<FutureLogged />}/>
   <Route path='/futureLogged' element={<FutureLogged />} />
-  {/* <Route path='/payment' element={<Payment />}/> */}
+  <Route path='/payment' element={<Payment />}/>
 </Routes>
   );
 }

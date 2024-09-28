@@ -28,7 +28,7 @@ function FullHistory() {
         <div>
             <input type="text" name='search' placeholder='Search Amount'/>
             {/* <img src={magnify} alt="" /> */}
-            <img src={searr} alt="" />
+            {/* <img src={searr} alt="" /> */}
         </div>
         <div>
             <select name="selectField" id="">
@@ -47,10 +47,8 @@ function FullHistory() {
         <div className="Payment">
             <div>
                 <h1>Payment History </h1>
-                {/* <Link>  See Details <img src={angleright} alt="" /></Link> */}
             </div>
-{/* <hr /> */}
-                <table cellSpacing="10px">
+                <table cellSpacing="5px">
                     <thead>
                         <th>Date</th>
                         <th>Description</th>

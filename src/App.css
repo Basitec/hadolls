@@ -12,6 +12,14 @@ button[type="submit"]{
     flex-direction: column;
     gap: 2em;
   }
+  div.FullHistory {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+    font-family: 'Inter';
+    /* background-color: #027A48; */
+  }
   label{
     color: #98A2B3;
   }
@@ -200,9 +208,7 @@ button[type="submit"]{
     /* border: 1px solid #0000005f; */
     margin: 0 auto;
   }
-  div.FullHistory{
-    font-family: 'Inter';
-  }
+
   div.Payment div h1,div.Payment div a{
     text-decoration: none;  
     font-size: 9.14px;
@@ -215,7 +221,11 @@ button[type="submit"]{
     align-items: center;
     color: #4F46E5;
   }
+  div.FullHistory>div.Payment{
+    width: 100%;
+  }
   div.FullHistory>div.Payment table{
+    /* width: 100%; */
     border-top: 1px solid #E4E7EC;
   }
   /* div.popwrapper>button{
@@ -432,12 +442,31 @@ button[type="submit"]{
     font-size: 0.7em;
     /* color: #002F8A; */
   }
+  /* div.FullHistory>div.Payment table{
+    background-color: ;
+  } */
+  div.FullHistory {
+    width: 80%;
+  }
   div.Subsidiaries div {
     padding: 0;
     width: 100%;
   }
+  div.FullHistory>div.Payment{
+    background-color: #002F8A;
+    width: 120%;
+  }
+  div.FullHistory>div.Payment table{
+    padding: 0;
+    width: 90%;
+    background-color: #027A48;
+  }
   div.Subsidiaries div h3{
     font-size: 0.6em;
+  }
+  div.FullHistory>form div{
+    width: 100%;
+    background-color: #1D2939;
   }
   div.accumulated button{
     font-size: 0.7em;

@@ -70,7 +70,7 @@ function FutureLogged() {
         <div className="accumulated">
             <h5>Accumulated Fund</h5>
             <div>
-                <h2>₦5,000,000</h2>
+                <h2>₦5,000,000</h2> &nbsp;
                 <button onClick={change}><img src={card} alt='' /> Add Funds</button>
             </div>
         </div>

@@ -16,7 +16,7 @@ function Future() {
     onSubmit: (action,values) => {
       navigate('/payment')
       console.log(values.selectField);
-      console.log(values.selectFiled2);
+      // console.log(values.selectFiled2);
       
        // access the select field's value here
     },
